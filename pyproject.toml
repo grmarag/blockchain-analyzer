@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "blockchain-analyzer"
+version = "0.1.0"
+description = "A blockchain transactions analysis tool for clustering, anomaly detection, and network analysis"
+authors = ["Grigorios Maragkakis <grigorios.maragkakis@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<4.0"
+pandas = "^2.2.3"
+numpy = "^2.2.3"
+scikit-learn = "^1.6.1"
+hdbscan = "^0.8.40"
+networkx = "^3.4.2"
+matplotlib = "^3.10.1"
+seaborn = "^0.13.2"
+openai = "^1.65.1"
+dotenv = "^0.9.9"
+fpdf = "^1.7.2"
+pyvis = "^0.3.2"
+pytest = "^8.3.5"
+
+[poetry.group.dev.dependencies]
+pytest-cov = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
